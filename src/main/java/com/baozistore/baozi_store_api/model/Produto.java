@@ -15,12 +15,12 @@ public class Produto {
 
     private String nome;
     private BigDecimal preco;
-    private Integer estoque;
+    private Boolean estoque;
 
     public Produto() {
     }
 
-    public Produto(String nome, BigDecimal preco, Integer estoque) {
+    public Produto(String nome, BigDecimal preco, Boolean estoque) {
         this.nome = nome;
         this.preco = preco;
         this.estoque = estoque;
@@ -50,11 +50,11 @@ public class Produto {
         this.preco = preco;
     }
 
-    public Integer getEstoque() {
+    public Boolean getEstoque() {
         return estoque;
     }
 
-    public void setEstoque(Integer estoque) {
+    public void setEstoque(Boolean estoque) {
         this.estoque = estoque;
     }
 }
