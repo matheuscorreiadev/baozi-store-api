@@ -24,6 +24,7 @@ public class ClienteController {
         this.clienteRepository = clienteRepository;
     }
 
+    // Listar todos
     @GetMapping
     public List<Cliente> listar() {
         return clienteRepository.findAll();
@@ -37,6 +38,7 @@ public class ClienteController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    // Criar
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Cliente criar(@RequestBody Cliente cliente) {
